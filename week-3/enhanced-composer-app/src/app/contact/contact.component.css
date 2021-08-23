@@ -1,0 +1,21 @@
+/**
+=============================================================
+; Title:  contact.component.css
+; Author: Professor Krasso
+; Date:   13 August 2021
+; Modified By: Soliman Elmalak
+; Description: styling for  contact.component.html
+; =============================================================
+*/
+.location {
+    text-align: center;
+  }
+  
+  .align-center {
+    text-align: center;
+  }
+  
+  .contact-container {
+    width: 100%;
+    padding-top: 50px;
+  }
