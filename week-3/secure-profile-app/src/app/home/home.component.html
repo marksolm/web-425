@@ -1,0 +1,56 @@
+<!--
+=============================================================
+; Title:  app.component.html
+; Author: Professor Krasso
+; Date:   06 August 2021
+; Modified By: Soliman Elmalak
+; Description: Exercise 3.3 
+; =============================================================
+-->
+
+<!-- Create the Navigation Bar -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact Us</a>
+      </li>
+    </ul>
+  </nav>
+  
+  <div class="container">
+    <br /><br />
+        <!-- Output the assignment variable defined in the component.ts module -->
+    <h2 style="text-align: center;">Exercise 3.3 - Passing Data to Routes, Part 2</h2>
+  
+    <br /><br />
+      <!-- Add an *ngIf to the row div and check if the isLoggedin value is true.  In the else clause call the “showError” ng-template  -->
+    <div class="row" *ngIf="isLoggedIn; else showError">
+      <div class="col-sm-4">
+        <!-- Insert the image here -->
+        <app-my-image></app-my-image>
+      </div>
+  
+      <div class="col-sm-8">
+        <!-- Insert the list of details here -->
+        <app-my-details></app-my-details>
+      </div>
+    </div>
+     <!-- Add an ng-template directive and name it showError -->
+    <ng-template #showError>
+      <!-- Add a Bootstrap row div and a 12 column div -->
+      <div class="row">
+        <div class="col-sm-12">
+          <h4 class="alert alert-danger">
+            You are not authorized to view this content.
+          </h4>
+        </div>
+      </div>
+    </ng-template>
+  
+  </div>
