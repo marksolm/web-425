@@ -1,0 +1,17 @@
+/*
+============================================
+; Title:  sign-in.component.css
+; Author: Professor Krasso
+; Date:   22 August 2021
+; Modified By: Soliman Abdelmalak
+; Description: Styling for sign-in.component.html
+============================================
+*/
+
+.signin-container {
+    width: 35%;
+    margin: 0 auto;
+    margin-top: 10%;
+
+  }
+
