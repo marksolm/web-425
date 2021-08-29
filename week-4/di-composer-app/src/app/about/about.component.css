@@ -1,0 +1,21 @@
+/**
+=============================================================
+; Title:  about.component.css
+; Author: Professor Krasso
+; Date:   13 August 2021
+; Modified By: Soliman Elmalak
+; Description: styling for  about.component.html
+; =============================================================
+*/
+apa-reference {
+    font-weight: lighter;
+    font-style: italic;
+  }
+  
+  .align-center {
+    text-align: center;
+  }
+  
+  .composer-container {
+    padding-top: 50px;
+  }
