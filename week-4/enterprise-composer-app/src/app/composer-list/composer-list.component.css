@@ -1,0 +1,18 @@
+/** 
+=============================================================
+; Title:  app.component.spec.ts
+; Author: Professor Krasso
+; Date:   27 August 2021
+; Modified By: Soliman Elmalak
+; Description: Styling for composer-list.component.html
+; =============================================================
+*/
+
+/* 
+ Styling for .txtSearch class for the input field a width of 30% and margin-bottom of 5px
+*/
+.txtSearch {
+    float: right;
+    width: 30%;
+    margin-bottom: 5px;
+  }

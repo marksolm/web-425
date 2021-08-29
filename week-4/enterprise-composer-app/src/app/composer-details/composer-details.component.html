@@ -1,0 +1,22 @@
+<!--
+=============================================================
+ Title:  composer-details.component.html
+ Author: Professor Krasso
+ Date:   22 August 2021
+ Modified By: Soliman Abdelmalak
+ Description: Assignment 4.4 – Async Pipe
+=============================================================
+-->
+<div class="row">
+    <div class="col-sm-6">
+      <!-- Output the values of the composer clicked on -->
+      <ul class="list-group">
+        <li class="list-group-item">Composer ID: {{ composer.composerId }}</li>
+        <li class="list-group-item">Full Name: {{ composer.fullName }}</li>
+        <li class="list-group-item">Genre: {{ composer.genre }}</li>
+      </ul>
+      <br />
+      <!-- Link to return to the list of composers -->
+      <a routerLink="/composer-list" class="float-right">Return to Composers</a>
+    </div>
+  </div>

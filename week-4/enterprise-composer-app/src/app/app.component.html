@@ -1,0 +1,36 @@
+<!--
+=============================================================
+; Title:  app.component.html
+; Author: Professor Krasso
+; Date:   13 August 2021
+; Modified By: Soliman Elmalak
+; Description: Assignment 4.4 – Async Pipe
+; =============================================================
+-->
+
+<!-- Create the Navigation Bar using Bootstrap -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" routerLink="/composer-list">Composer List</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/about">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/contact">Contact Us</a>
+    </li>
+  </ul>
+</nav>
+
+<!-- Define the router-outlet to place components in -->
+<div class="container">
+  <br /><br />
+  <h2 class="text-center text-primary" >{{ assignment }}</h2>
+  <br /><br />
+  <div class="row">
+    <div class="col-sm-12">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
