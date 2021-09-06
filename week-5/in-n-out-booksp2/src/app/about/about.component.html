@@ -1,0 +1,33 @@
+<!--
+=============================================================
+; Title:  about.component.html
+; Author: Professor Krasso
+; Date:   02 September 2021
+; Modified By: Soliman Elmalak
+; Description: HTML for the about component 
+=============================================================
+-->
+
+<!-- Using flex-layout create a new row div and set the row to wrap -->
+<div fxLayout="row wrap">
+    <!-- add two fxFlex divs to display the content in two columns: image and description -->
+    <div fxFlex>
+      <div fxLayout="column">
+        <div>
+          <img src="../assets/bird.JPEG" title="Image of a Mockingbird" alt="Image of a Mockingbird" width="500px;"/>
+        </div>
+        <div>
+          <em>
+            Image from <a class="attribution-link" href="https://www.thespruce.com/parts-of-a-bird-387367" target="_blank">Storypick </a>
+        </em>
+        </div>
+      </div>
+    </div>
+  
+    <div fxFlex>
+      <h1 class="blue">Who was Harper Lee?</h1>
+      <p>Harper Lee was an American novelist. She born on April 28, 1926. She grew up in Monroeville, a small town in southwest Alabama. As a child, Lee was a tomboy and a precocious reader. After she graduated from Alabama University, she wrote several essays and short stories. Harper Lee is best known for her Pulitzer Prize-winning novel <i>To Kill a Mockingbird</i> which was published in 1960.Also, she wrote a second novel, <i>Go Set a Watchman</i>. She died at the age of 89 on February 19, 2016. </p>
+      <em>Biography by: <a href="https://www.biography.com/writer/harper-lee" target="-blank" class="attribution-link">Biography.com Editors</a></em>
+
+    </div>
+  </div>
