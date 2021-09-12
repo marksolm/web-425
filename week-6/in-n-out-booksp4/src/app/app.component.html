@@ -1,0 +1,44 @@
+<!--
+=============================================================
+; Title:  app.component.html
+; Author: Professor Krasso
+; Date:   12 September 2021
+; Modified By: Soliman Elmalak
+; Description: HTML for the app.component of in-n-out-books, part 4
+=============================================================
+-->
+<!-- Create the Toolbar with the logo -->
+<mat-toolbar class="toolbar">
+  <mat-toolbar-row>
+    <div class="logo">
+      <img src="./assets/In-N-Out books Logo.png" height="80" />
+    </div>
+    
+    <div style="width: 80%">
+      <div fxLayout="row wrap" fxLayoutAlign="end start">
+       <!-- Add a mat-button with a routerLink for /book-list, /contact, and /about -->
+        <button mat-button routerLink="/book-list">Book List</button>
+        <button mat-button routerLink="/wishlist">Wish List</button>
+        <button mat-button routerLink="/contact">Contact</button>
+        <button mat-button routerLink="/about">About</button>
+      </div>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+<br />
+
+<div fxLayout="row wrap">
+  <div fxFlex>
+    <!-- Create the Toolbar with the logo and links to Book List, Contact Us, and About Us -->
+    <mat-card class="main-container">
+      <mat-card-title class="blue" style="text-align: center;">
+        {{ assignment }}
+      </mat-card-title>
+      <br />
+      <br />
+      <mat-card-content>
+        <router-outlet></router-outlet>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

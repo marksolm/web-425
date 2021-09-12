@@ -1,0 +1,33 @@
+<!--
+=============================================================
+; Title:  book-details-dialog.component.html
+; Author: Professor Krasso
+; Date:   02 September 2021
+; Modified By: Soliman Elmalak
+ Description: HTML for the book-details-dialog.component 
+=============================================================
+-->
+
+<!-- Add mat-card with a title, content and actions -->
+<mat-card>
+    <!-- The title should display the book’s title and set the font color to blue -->
+    <mat-card-title class="blue">
+      {{ book.title}}
+    </mat-card-title>
+    <br /><br />
+  <mat-card-content>
+    <!--add an Flex column layout and use paragraph tags to output each value of the book object --> 
+      <div fxLayout="column" class="book-details">
+        <p>ISBN: {{ book.isbn }}</p>
+        <p>Description: <br /> {{ book.description }}</p>
+        <p>Author:<br /> {{ book.authors.join(', ' )}}</p>
+        <p>Number of pages:<br /> {{ book.numOfPages }}</p>
+      </div>
+  </mat-card-content>
+    
+    <!-- add a single mat-raised button, set the color to accent, and add the matDialogClose directive to ‘confirm’ --> 
+  <mat-card-actions style="text-align: end;">
+      <button  mat-raised-button color="accent" matDialogClose="confirm">OK</button>
+  </mat-card-actions>
+</mat-card>
+  

@@ -1,0 +1,23 @@
+
+/*
+============================================
+; Title:  book-list.component.css
+; Author: Professor Krasso
+; Date:   02 September 2021
+; Modified By: Soliman Elmalak
+; Description: Styling for the book-list.component.html
+============================================
+*/
+
+/**
+styling for hover cursor
+*/
+.a-link {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /** styling for text-decoration */
+  .a-link:hover {
+    text-decoration: underline;
+  }
