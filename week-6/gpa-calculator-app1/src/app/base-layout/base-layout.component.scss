@@ -1,0 +1,21 @@
+/*
+============================================
+; Title:  app.component.scss
+; Author: Professor Krasso
+; Date:   11 September 2021
+; Modified By: Soliman Elmalak
+; Description: components styling
+============================================
+*/
+
+/* Adding margin for the logo image*/
+.logo {
+    margin-top: 5px;
+  }
+
+  /* Adding padding-top, width, and margin for .main-container*/
+  .main-container {
+    padding-top: 25px;
+    width: 80%;
+    margin: 0 auto;
+  }
