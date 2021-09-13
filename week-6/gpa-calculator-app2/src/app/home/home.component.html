@@ -1,0 +1,63 @@
+<!--
+=============================================================
+; Title:  home.component.html
+; Author: Professor Krasso
+; Date:   12 September 2021
+; Modified By: Soliman Elmalak
+; Description: HTML for the home.component 
+=============================================================
+-->
+<div fxLayout="row wrap" fxLayoutGap="20px">
+    <!-- Create a form -->
+    <div fxFlex class="grade-form">
+      <mat-card class="mat-elevation-z8">
+        <mat-card-title style="text-align: center;">Grade Entry</mat-card-title>
+         <!--Card-content-->
+        <mat-card-content>
+          <form fxLayout="column" fxLayoutGap="16px">
+            <mat-form-field fxFlex appearance="fill">
+              <mat-label>Course</mat-label>
+              <input type="text" id="txtCourse" matInput [(ngModel)]="transcriptEntry.course" name="txtCourse" />
+            </mat-form-field>
+  
+            <mat-form-field fxFlex appearance="fill">
+              <mat-label>Grade</mat-label>
+              <!-- Dropdown box to select the grade -->
+              <mat-select [(ngModel)]="transcriptEntry.grade" name="selectGrade">
+                <mat-option *ngFor="let grade of selectableGrades" [value]="grade">
+                  {{ grade }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+            <button mat-raised-button color="primary" (click)="saveEntry()">Save</button>
+          </form>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <!-- Create a right div for the Transcript -->
+    <div fxFlex>
+      <mat-card class="mat-elevation-z8">
+        <button mat-button color="primary" class="marginRight" (click)="clearEntries()">Clear Transcript</button>
+        <mat-card-title style="text-align: center;">Transcript</mat-card-title>
+        <mat-card-content>
+          <app-grade-summary *ngFor="let entry of transcriptEntries" [course]="entry.course" [grade]="entry.grade"></app-grade-summary>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  
+  <br /> <br />
+  
+  <div fxLayout="column" fxLayoutGap="20px">
+    <!--Add a button above the card , (click) event to call the calculateResults() event.-->
+    <div fxFlex class="gpa">
+      <mat-card class="mat-elevation-z8">
+        <button mat-button color="primary" class="marginRight" (click)="calculateResults()">Calculate GPA</button>
+        <mat-card-title style="text-align: center">
+            GPA: <app-gpa [gpaTotal]="gpaTotal"></app-gpa>
+        </mat-card-title>
+      </mat-card>
+    </div>
+  </div>
+
+
