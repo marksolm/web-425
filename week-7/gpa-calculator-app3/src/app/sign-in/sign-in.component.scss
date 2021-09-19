@@ -1,0 +1,33 @@
+/*
+============================================
+; Title:  sign-in.component.scss
+; Author: Professor Krasso
+; Date:   12 September 2021
+; Modified By: Soliman Elmalak
+; Description: Sign-in component CSS file
+;===========================================
+*/
+
+/*Sign-in-container, centered with 35% width and 15% top margin*/
+.signin-container {
+    width: 35%;
+    margin: 15% auto;
+  }
+  /*Center text in the mat-card-title and mat-card-subtitle */
+  .signin-container > mat-card-title, mat-card-subtitle {
+    text-align: center;
+  }
+  /*Styling for Message error*/
+  .msg-error {
+    margin: 10px 0px;
+    padding: 12px;
+    color: #D8000C;
+    background-color: #FFD2D2;
+  }
+
+
+/* margin Right and left styling*/
+#marginRight{
+ margin-left: 100px; 
+ margin-right: 100px;
+}
