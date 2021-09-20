@@ -40,7 +40,8 @@
             </mat-card-content>
   
             <mat-card-actions>
-              <button type="submit" fxFlex mat-raised-button color="primary">Submit</button>
+              <!--Disable the submit button when the form is invalid -->
+              <button type="submit" id="marginRight" [disabled]="!signinForm.valid"fxFlex mat-raised-button color="primary">Submit</button>
             </mat-card-actions>
           </form>
         </mat-card>

@@ -33,7 +33,7 @@ export class SignInComponent implements OnInit {
   ngOnInit(): void {
     // create a studentId FormGroup with on FormControl
     this.signinForm = this.fb.group({
-      studentId: ''
+      studentId:["", Validators.compose([Validators.required, Validators.pattern('^[0-9]*$')])]
     });
   }
 
