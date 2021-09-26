@@ -1,0 +1,17 @@
+/*
+============================================
+; Title:  book-details-dialog.component.css
+; Author: Professor Krasso
+; Date:   02 September 2021
+; Modified By: Soliman Elmalak
+; Description: Styling for the book-details-dialog.component.html
+============================================
+*/
+
+/* styling for .book-details */
+.book-details {
+    padding: 20px;
+    line-height: 1.6;
+    font-size: 18px;
+    font-weight: lighter;
+  }

@@ -1,0 +1,45 @@
+
+/*
+============================================
+; Title:  book-list.component.css
+; Author: Professor Krasso
+; Date:   02 September 2021
+; Modified By: Soliman Elmalak
+; Description: Styling for the book-list.component.html
+============================================
+*/
+
+/**
+styling for hover cursor
+*/
+.a-link {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /** styling for text-decoration */
+  .a-link:hover {
+    text-decoration: underline;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto auto auto;
+    padding: 25px;
+  }
+  
+  .grid-container_item {
+    padding: 20px;
+    font-size: 30px;
+  }
+  
+  .grid-container_ahref:hover {
+    text-decoration: underline;
+  }
+  
+  .grid-container_ahref {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  

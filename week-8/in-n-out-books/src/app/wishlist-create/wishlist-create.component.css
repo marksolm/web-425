@@ -1,0 +1,13 @@
+/*
+============================================
+; Title:  wishlist-create.component.css
+; Author: Professor Krasso
+; Date:   23 September 2021
+; Modified By: Soliman Elmalak
+; Description: Styling for the wishlist-create.component.html
+============================================
+*/
+
+.wishlist-create-form {
+    width: 60%;
+  }

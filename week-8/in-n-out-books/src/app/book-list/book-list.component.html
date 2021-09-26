@@ -1,0 +1,37 @@
+<!--
+=============================================================
+; Title:  book-list.component.html
+; Author: Professor Krasso
+; Date:   02 September 2021
+; Modified By: Soliman Elmalak
+; Description: book-list.component
+=============================================================
+-->
+
+<!-- Create a Flex row div and wrap the content -->
+<div fxLayout="column wrap">
+  <!-- Display a spinner until the books are loaded -->
+  <ng-container *ngIf = "books.length === 0">
+    <mat-spinner></mat-spinner>
+  </ng-container>
+  <!-- Display the books -->
+  <div *ngIf = "books.length > 0">
+    <h2 class="green">Top {{books.length}} Favorite Books</h2>
+    <div class="grid-container">
+      <ng-container *ngFor = "let book of books">
+        <mat-card class="grid-container_item mat-elevation-z8">
+          <mat-card-title>
+            <a class="grid-container_ahref blue" (click)="showBookDetails(book.isbn)">{{book.title}}</a>
+          </mat-card-title><br />
+          <mat-card-content>
+            <mat-list>
+              <mat-list-item>ISBN: {{ book.isbn }}</mat-list-item>
+              <mat-list-item> Pages: {{ book.numOfPages }}</mat-list-item>
+              <mat-list-item>Authors: {{ book.authors }}</mat-list-item>
+            </mat-list>
+          </mat-card-content>
+        </mat-card>
+      </ng-container>
+    </div>
+  </div>
+</div>
