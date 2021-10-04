@@ -1,0 +1,59 @@
+<!--
+=============================================================
+; Title:  invoice-dialog.component.html
+; Author: Professor Krasso
+; Date:   30 september 2021
+; Modified By: Soliman Elmalak
+; Description: invoice-dialog.component.html
+; =============================================================
+-->
+
+<div>
+  <!-- close button -->
+  <div style="text-align: right">
+    <button mat-icon-button matDialogClose="cancel">
+      <mat-icon class="icon">close</mat-icon>
+    </button>
+  </div>
+  <div><h2>Invoice Summary</h2></div>
+  <div>
+    <!-- fxLayout row -->
+    <div  fxLayout="row">
+      <mat-card>
+        <div class="borderContainer"  fxLayoutGap="25px">
+          <!-- Adding current Date -->
+          <h2>Date: {{ currentDate | date}} </h2>
+          <mat-card-content>
+            <ng-container>
+              <div *ngFor="let repair of repairs; let i =index">
+                <div>{{ repairs[i].serviceName }}
+                  <div style="float: right">{{ repairs[i].price | currency}}</div>
+                </div>
+         
+               </div>
+             </ng-container>
+               <!-- Adding the list and the value of all selective services, parts, labor to the total invoice  -->
+              <div>Total Repairs: 
+                  <div style="float: right"> {{ repairTotal | currency }}</div>
+              </div>
+              <div>Total Parts: 
+                 <div style="float: right"> {{ partsFee | currency }}</div>
+              </div>
+              <div>Total Labor: 
+                   <div style="float: right"> {{ laborFee | currency }}</div>
+              </div>
+              <div>Total Parts and Labor: 
+                 <div style="float: right"> {{ partsLaborFee | currency }}</div>
+             </div>
+              <div>Invoice Total: 
+                <div style="float: right"> {{ invoiceTotal | currency }}</div>
+              </div>
+                  <br />  
+             <button class="orderButton" matDialogClose="ordered">Complete Order</button>
+           </mat-card-content>
+         </div>
+       </mat-card>
+     </div>
+   </div>
+</div>
+

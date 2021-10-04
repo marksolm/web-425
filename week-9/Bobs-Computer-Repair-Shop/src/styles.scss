@@ -1,0 +1,29 @@
+
+/*
+=============================================================
+; Title:  styles.scss 
+; Author: Professor Krasso
+; Date:   03 October 2021
+; Modified By: Soliman Elmalak
+; Description: Angular Material styles.scss
+; =============================================================
+*/
+
+//Add an import statement for the _theme.scss file .
+@import './theme';
+
+html, body {
+  height: 100%;
+  font-size: xx-large;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: xx-large;
+}
+
+
+
+.card-title-icon, .mat-icon, mat-card-content {
+  font-size: 102px;
+}

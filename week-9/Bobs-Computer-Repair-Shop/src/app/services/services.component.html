@@ -1,0 +1,57 @@
+<!--
+=============================================================
+; Title:  services.component.html
+; Author: Professor Krasso
+; Date:   30 september 2021
+; Modified By: Soliman Elmalak
+; Description: services component
+; =============================================================
+-->
+
+<div>
+    <!-- Create a form to select the services -->
+  <div>
+      <mat-card>
+        <mat-card-title>
+          <h2 style="font-size: 1.6em;">Services</h2>
+        </mat-card-title>
+        <br />
+          <!--<form [formGroup]="serviceForm" fxLayout="column" fxLayoutGap="16px" (ngSubmit)="onSubmit()"> -->
+        <form [formGroup]="serviceForm">
+          <mat-card-content>
+            <ng-container>
+              <!--Import services list -->
+              <div class="selective" fxLayout="column" fxLayoutGap="25px">
+                <div fxFlex formArrayName="serviceOptions" *ngFor="let service of serviceForm.controls.serviceOptions['controls']; let i = index">
+                  <mat-checkbox formControlName="{{i}}" [value]="services[i].price" (change)="onCheckboxChanged($event)">
+                  {{ services[i].serviceName }}: {{services[i].price | currency}}
+                  </mat-checkbox>
+                </div>
+              </div>
+            </ng-container>
+            <br />
+            <hr />
+            <br /> <br />
+             <!--h1 styling -->
+            <h2 style="font-size: 1.6em;">Standard Fees</h2>
+            <mat-card-actions class="selective" fxLayout="row">
+                <!--mat-label for parts -->
+              <mat-label fxLayout="row">Parts: &nbsp;</mat-label>
+              <input #parts type="number" formControlName="partsFee"   placeholder="Enter Value">
+            </mat-card-actions>
+            <mat-card-actions class="selective" fxLayout="row">
+                <!--mat-label for labor -->
+               <mat-label >Labor: &nbsp;</mat-label>
+               <input type="number" #labor text-field formControlName="laborFee" placeholder="Hourly Labor@$50.00" >
+               <button style="margin-left: 350px;"   color="blue" (click)="ThePartsLaborFee({parts: parts.value, labor: labor.value})">Add</button>
+            </mat-card-actions>
+          </mat-card-content>
+          <mat-card-actions>
+            <hr />
+             <!--Submit button -->
+            <button (click)="onSubmit()">Submit</button>
+          </mat-card-actions>
+        </form>
+      </mat-card>
+  </div>
+</div>

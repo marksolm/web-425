@@ -1,0 +1,41 @@
+/*
+============================================
+; Title:  services.component.css
+; Author: Professor Krasso
+; Date:   30 september 2021
+; Modified By: Soliman Elmalak
+; Description: Styling for the services.component.html
+============================================
+*/
+  
+/* hr margin-left,width,height, background-color, and border-color.*/
+  hr {
+    margin-left: 0px;
+    width: 38%;
+    height: 2px;
+    background-color: #000a12;
+    border-color: black
+  }
+  /* button styling*/
+  button {
+      width: 150px;
+      height: 50px;
+      background-color: #4f5b62;
+      font-size: 1.5em;
+      color: white;
+  }
+
+  /* services list styling */
+  .selective {
+    font-size: 1.49em;
+    color: #000a12;
+    font-weight: bold;
+  }
+  
+  /* input styling*/
+  input {
+      width: 210px;
+      height: 30px;
+      font-size: .88em;
+      font-weight: bold;
+  }

@@ -1,0 +1,44 @@
+<!--
+=============================================================
+; Title:  home.component.html
+; Author: Professor Krasso
+; Date:   30 september 2021
+; Modified By: Soliman Elmalak
+; Description: home.component
+; =============================================================
+-->
+
+<div fxLayout="column">
+    <div>
+     <h1>We fix all types of computers from Desktop to laptop covering:</h1> 
+    </div>
+    <!-- insert hr -->
+    <hr />
+    <div class="col-sm-2">
+      <!-- Repair image div -->
+      <div class="content">
+        <div>
+          <img src="./assets/repairing.png" />
+        </div>
+        <br />
+        <p>
+          Let Fix Your Device
+        </p>
+      </div>
+      <!-- link to the services page-->
+      <div class="content">
+          <button routerLink="/services"  color="primary">Services</button>
+      </div>
+        <div  class="FontStyle">
+          <!-- unorder list of the offering services -->
+          <ul>
+              <li>Password Reset</li><br />
+              <li>Spyware Removal</li><br />
+              <li>RAM Upgrade</li><br />
+              <li>Software Installation</li><br />
+              <li>Tune-up</li><br />
+              <li>Keyboard Cleaning</li><br />
+          </ul>
+      </div>
+    </div>
+</div>

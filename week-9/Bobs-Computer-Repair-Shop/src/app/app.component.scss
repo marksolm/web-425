@@ -1,0 +1,40 @@
+/**
+=============================================================
+; Title:  contact.component.css
+; Author: Professor Krasso
+; Date:   30 september 2021
+; Modified By: Soliman Elmalak
+; Description: styling for  contact.component.html
+; =============================================================
+*/
+
+//navbar styling
+.navbar {
+  padding-top: 20px;
+  background-color: #000a12;
+  height: 50px;
+  font-size: 135px;
+}
+
+//This is the setup of the main-container margin-top, background, padding-top.
+.main-container {
+  margin-top: 20px;
+  background-color:#4f5b62;
+  padding-top: 60px;
+}
+
+//mat-card-title setup
+mat-card-title{
+  text-align: center;
+  color: #E8F4F8;
+  font-size: 2.2em;
+  background-color:#4f5b62;
+
+}
+//This is the button font-size, color, font-weight styling
+button{
+  font-size: .2em;
+  color:#E8F4F8;
+  font-weight: bold;
+
+}

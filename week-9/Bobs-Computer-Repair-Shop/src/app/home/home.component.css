@@ -1,0 +1,39 @@
+/*
+============================================
+; Title:  home.component.css
+; Author: Professor Krasso
+; Date:   30 september 2021
+; Modified By: Soliman Elmalak
+; Description: Styling for the home.component.html
+============================================
+*/
+
+/* This is the setup for the Unorder list*/
+.FontStyle{
+    font-size: 2.2em;
+    font-weight: bold;
+    color: blue;
+}
+
+/* content styling*/
+.content{
+    color: 000a12;
+    font-size: 2.2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* button styling*/
+button {
+    width: 150px;
+    height: 50px;
+    background-color: #4f5b62;
+    font-size: 1.1em;
+    color: white;
+}
+h1{
+    color: #00569f;
+    font-size: 2.9em;
+    font-weight: bold;
+    text-align: center;
+}

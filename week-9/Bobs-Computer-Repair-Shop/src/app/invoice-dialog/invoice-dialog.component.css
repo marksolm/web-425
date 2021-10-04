@@ -1,0 +1,38 @@
+/*
+============================================
+; Title:  invoice-dialog.component.css
+; Author: Professor Krasso
+; Date:   30 september 2021
+; Modified By: Soliman Elmalak
+; Description: Styling for the services.component.html
+============================================
+*/
+
+/* border styling*/
+.borderContainer{
+  border-style: solid;
+}
+
+/* This is the setup of mat-icon position, and align-content*/
+mat-icon {
+    position:absolute;
+    align-content: center;
+}
+  
+/* p styling*/
+p{
+    font-size: 1.5em;
+
+/* orderButton width,height,background-color,font-size, and color */
+}
+.orderButton{
+    width: 250px;
+    height: 50px;
+    background-color: #4f5b62;
+    font-size: 1.5em;
+    color: white;
+}
+/* This is the setup for the closing dialog */
+.icon {
+    font-size: 36px;
+}
